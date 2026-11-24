@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Зніми себе як профі — UWELL KIDS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: bright, playful, confident — kids' studio, parents trust it
+   IDEA: a film-set call sheet: hero = set, programme = shot list, form = casting card
+   PICTURE: UWELL KIDS mascots as stickers around the logo glow
+   COLOUR and TYPE: brand black-red night ground, white cards, red #e30613; Unbounded + Manrope
+   LAYOUT: hero (logo, title, stickers) → 4-step programme → form card with mascots peeking */
+:root{color-scheme:dark;--bg:#0d0102;--deep:#1b0305;--red:#e30613;--red2:#ff2a36;--ink:#fff;--mute:#d8c3c4;
+--card:#fff;--cink:#141012;--cmute:#5f5557;--line:#e6dcdc}
+:root[data-theme=light],:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Manrope,system-ui,sans-serif;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;line-height:1.05;text-wrap:balance;margin:0}
+.band{padding:clamp(28px,5vw,72px) max(5vw,16px)}
+.wrap{max-width:1180px;margin:0 auto}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(70% 80% at 70% 40%,#5a0710 0%,#2a0207 40%,var(--bg) 75%);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:90vmax;height:90vmax;border-radius:50%;border:2px solid rgba(255,255,255,.35);box-shadow:0 0 40px 6px rgba(227,6,19,.55),inset 0 0 40px 6px rgba(227,6,19,.4);transform:translate(35%,-10%);pointer-events:none}
+.hgrid{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:center}
+.logo{width:clamp(110px,14vw,160px);-webkit-mask-image:radial-gradient(closest-side,#000 70%,transparent);mask-image:radial-gradient(closest-side,#000 70%,transparent)}
+.kick{display:inline-block;margin:18px 0 14px;padding:6px 14px;border-radius:999px;background:var(--red);font-weight:800;font-size:14px}
+h1{font-size:clamp(38px,6.4vw,76px);font-weight:800}
+h1 span{display:block;color:var(--red2)}
+.lead{font-size:18px;max-width:46ch;margin:18px 0 24px;color:var(--mute)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 26px;padding:0;list-style:none;max-width:520px}
+.facts li{border:1.5px solid rgba(255,255,255,.35);border-radius:12px;padding:10px 14px;font-weight:700}
+.facts small{display:block;font-weight:600;font-size:13px;color:var(--mute)}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 32px;border-radius:999px;background:var(--red);color:#fff;font:800 18px Manrope,sans-serif;text-decoration:none;border:0;cursor:pointer;box-shadow:0 10px 30px -8px rgba(227,6,19,.9);transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.seats{margin:12px 0 0;font-size:14px;color:var(--mute)}
+.steps.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--red);display:grid;place-items:center}
+.ico svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.where{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;color:var(--mute)}
+.where a{color:#fff;font-weight:700}
+.stage{position:relative;height:clamp(340px,42vw,520px)}
+.stage img{position:absolute;filter:drop-shadow(0 18px 24px rgba(0,0,0,.55))}
+.s1{width:58%;left:0;bottom:0;transform:rotate(-5deg);z-index:2}
+.s2{width:52%;right:0;top:0;transform:rotate(6deg)}
+.float{animation:bob 4s ease-in-out infinite}.s2.float{animation-delay:-2s}
+@keyframes bob{50%{translate:0 -10px}}
+
+/* programme */
+.prog{background:var(--deep)}
+.prog h2,.sec h2{font-size:clamp(28px,4vw,44px);margin-bottom:8px}
+.sub{color:var(--mute);margin:0 0 28px;max-width:60ch}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0;padding:0;list-style:none}
+.steps li{display:flex;flex-direction:column;gap:0;background:rgba(255,255,255,.05);border:1.5px solid rgba(255,255,255,.14);border-radius:18px;padding:20px}
+.t{font-family:Unbounded,sans-serif;font-weight:800;font-size:26px;color:var(--red2);white-space:nowrap}
+.t small{font-size:14px;color:var(--mute);font-family:Manrope,sans-serif;font-weight:700;margin-left:4px}
+.steps h3{font-size:17px;margin:10px 0 8px;line-height:1.2}
+.steps p{margin:0;color:var(--mute);font-size:15px}
+.take{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.take div{border-radius:16px;padding:16px 18px;background:var(--red);font-weight:700}
+.take span{display:block;font-weight:600;font-size:14px;opacity:.9}
+
+/* form */
+.sec{position:relative}
+.fwrap{position:relative;max-width:760px;margin:0 auto}
+.peek{position:absolute;width:190px;z-index:0;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5));pointer-events:none}
+.pl{left:-140px;top:90px;transform:rotate(-8deg)}.pr{right:-140px;bottom:80px;transform:rotate(7deg)}
+.card{position:relative;z-index:1;background:var(--card);color:var(--cink);border-radius:24px;padding:clamp(22px,4vw,40px);box-shadow:0 30px 60px -20px rgba(227,6,19,.45)}
+.card h2{color:var(--cink)}
+.card .sub{color:var(--cmute);margin-bottom:22px}
+fieldset{border:0;padding:0;margin:0 0 24px}
+legend{font-family:Unbounded,sans-serif;font-weight:600;font-size:18px;margin-bottom:12px;padding:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.full{grid-column:1/-1}
+label.f{display:block;font-weight:700;font-size:15px}
+label.f input,label.f textarea{display:block;margin-top:6px}
+.req{color:var(--red)}
+input[type=text],input[type=tel],input[type=number],textarea{font:inherit;font-size:16px;color:var(--cink);background:#faf6f6;border:2px solid var(--line);border-radius:12px;padding:10px 12px;min-height:48px;width:100%}
+textarea{min-height:90px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--red);outline:none}
+:focus-visible{outline:3px solid var(--red2);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:2px solid var(--line);border-radius:999px;font-weight:700;background:#faf6f6;cursor:pointer}
+.chip input:checked+span{background:var(--red);border-color:var(--red);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--red2);outline-offset:2px}
+.agree{display:flex;gap:12px;align-items:flex-start;font-size:15px}
+.agree input{width:22px;height:22px;margin-top:2px;accent-color:var(--red);flex:none}
+.err{color:var(--red);font-weight:700;font-size:14px;min-height:1.3em;margin:8px 0}
+[aria-invalid=true]{border-color:var(--red)!important}
+.card .cta{width:100%}
+.cta[disabled]{opacity:.6;cursor:wait}
+.done{display:none;text-align:center;padding:10px 0}
+.done.on{display:block}
+.done img{width:180px;margin:0 auto 10px}
+.done h2{font-size:clamp(24px,4vw,32px);margin-bottom:10px}
+.ghost{min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--line);background:#fff;color:var(--cink);font:700 15px Manrope,sans-serif;cursor:pointer}
+
+/* admin */
+.admin{display:none;max-width:1180px;margin:40px auto 0;background:var(--card);color:var(--cink);border-radius:20px;padding:clamp(18px,3vw,28px)}
+.admin.on{display:block}
+.atop{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.admin h2{font-size:20px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:start;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{white-space:nowrap}td.n{text-align:right;white-space:nowrap}
+footer{text-align:center;color:var(--mute);font-size:13px;padding:24px 16px 40px}
+
+@media(max-width:1100px){.peek{display:none}}
+@media(max-width:900px){.steps.three{grid-template-columns:minmax(0,1fr)}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.hgrid{grid-template-columns:minmax(0,1fr)}.stage{height:min(92vw,420px);order:-1}.hero::before{display:none}.take{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.grid,.steps{grid-template-columns:minmax(0,1fr)}.lead{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}.cta{transition:none}}
+</style>
+</head>
+<body>
+<header class="hero band">
+  <div class="wrap hgrid">
+    <div>
+      <img class="logo" src="logo.webp" alt="UWELL KIDS" width="540" height="560">
+      <span class="kick">Безкоштовний майстер-клас · 7–12 років</span>
+      <h1>Зніми себе <span>як профі!</span></h1>
+      <p class="lead">Ваша дитина любить знімати відео, але соромиться камери чи не знає, про що говорити? Цієї суботи допоможемо кожному розкрити свою суперсилу і записати власну відеовізитівку.</p>
+      <ul class="facts">
+        <li><small>Коли</small>28 листопада, субота</li>
+        <li><small>Початок</small>14:00</li>
+        <li><small>Де</small>Київ, вул. Чикаленка, 8</li>
+        <li><small>Вартість</small>безкоштовно</li>
+      </ul>
+      <a class="cta" href="#form">Забронювати місце</a>
+      <p class="seats">Кількість місць обмежена, щоб приділити увагу кожній дитині</p>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <img class="s2 float" src="girl2.webp" alt="" width="429" height="620">
+      <img class="s1 float" src="boy2.webp" alt="" width="498" height="620">
+    </div>
+  </div>
+</header>
+
+<section class="prog band">
+  <div class="wrap">
+    <h2>Що чекає на дітей</h2>
+    <p class="sub">Жодної нудної теорії: лише жива практика, підтримка команди UWELL KIDS і реальний досвід роботи на знімальному майданчику.</p>
+    <ol class="steps three">
+      <li><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></div><h3>Розпаковка суперсили</h3><p>Разом розберемося, у чому унікальність кожної дитини, її сильні сторони та фішки, про які цікаво розповідати світові.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div><h3>Секрети профі</h3><p>Наш оператор наживо покаже, як виставляти світло, будувати кадр і користуватися петличкою для чистого звуку.</p></li>
+      <li><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zM4 8l2-4h14l-2 4M9 4 7 8M14 4l-2 4"/></svg></div><h3>Власна відеовізитівка</h3><p>Кожен учасник застосує знання на практиці й під супроводом команди запише свою першу професійну відеовізитівку.</p></li>
+    </ol>
+    <div class="where"><span>📍 вул. Чикаленка, 8, студія <a href="https://www.instagram.com/kyivphotovideo/">@kyivphotovideo</a></span><span>⏰ 28 листопада, 14:00</span></div>
+  </div>
+</section>
+
+<section class="sec band" id="form">
+  <div class="fwrap">
+    <img class="peek pl" src="girl1.webp" alt="" aria-hidden="true">
+    <img class="peek pr" src="boy1.webp" alt="" aria-hidden="true">
+    <div class="card">
+      <form id="f" novalidate>
+        <h2>Анкета учасника</h2>
+        <p class="sub">Участь безкоштовна, але за попереднім записом. Заповніть анкету, і ми зв'яжемося, щоб підтвердити місце.</p>
+        <fieldset>
+          <legend>Дитина</legend>
+          <div class="grid">
+            <label class="f full">Ім'я та прізвище <span class="req">*</span><input type="text" id="name" autocomplete="off" required></label>
+            <label class="f">Вік <span class="req">*</span><input type="number" id="age" min="5" max="16" inputmode="numeric" required></label>
+            <label class="f">Місто<input type="text" id="city" autocomplete="address-level2"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Батьки</legend>
+          <div class="grid">
+            <label class="f full">Ім'я батьків <span class="req">*</span><input type="text" id="parent" autocomplete="name" required></label>
+            <label class="f">Телефон <span class="req">*</span><input type="tel" id="phone" autocomplete="tel" placeholder="+380" required></label>
+            <label class="f">Telegram або Instagram<input type="text" id="social" placeholder="@нікнейм"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Як дитина почувається перед камерою</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="exp" value="Соромиться" checked><span>Соромиться</span></label>
+            <label class="chip"><input type="radio" name="exp" value="Трохи знімає"><span>Трохи знімає</span></label>
+            <label class="chip"><input type="radio" name="exp" value="Обожнює камеру"><span>Обожнює камеру</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Чим захоплюється дитина</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="topic" value="Ігри"><span>Ігри</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Танці"><span>Танці</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Музика"><span>Музика</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Спорт"><span>Спорт</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Огляди"><span>Огляди</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Творчість"><span>Творчість</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Тварини"><span>Тварини</span></label>
+            <label class="chip"><input type="checkbox" name="topic" value="Кулінарія"><span>Кулінарія</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label class="f">Коментар або питання<textarea id="note" placeholder="Наприклад: займається танцями, хоче розповісти про це"></textarea></label>
+        </fieldset>
+        <label class="agree"><input type="checkbox" id="ok"><span>Я один з батьків і погоджуюся на обробку контактних даних для зв'язку щодо майстер-класу <span class="req">*</span></span></label>
+        <p class="err" id="err" role="alert"></p>
+        <button class="cta" type="submit" id="send">Записатися</button>
+      </form>
+      <div class="done" id="done" role="status">
+        <img src="boy2.webp" alt="" width="498" height="620">
+        <h2>Заявку прийнято!</h2>
+        <p>Скоро зв'яжемося з вами, щоб підтвердити місце. До зустрічі 28 листопада о 14:00 на Чикаленка, 8!</p>
+        <button type="button" class="ghost" id="again">Записати ще одну дитину</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin" id="admin" aria-label="Заявки">
+    <div class="atop"><h2 id="cnt">Заявки</h2><button type="button" class="ghost" id="copy">Копіювати як таблицю</button></div>
+    <div class="scroll"><table>
+      <thead><tr><th>Дата</th><th>Дитина</th><th>Вік</th><th>Батьки</th><th>Телефон</th><th>Соцмережі</th><th>Перед камерою</th><th>Теми</th><th>Коментар</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<footer>UWELL KIDS ❤️ Тут починається твоя історія.</footer>
+
+<script>
+{
+/* Куди приходять анкети на власному сайті */
+const EMAIL='uwellkids.team@gmail.com';
+/* Необов'язково: URL веб-застосунку Google Apps Script, щоб анкети також падали в таблицю */
+const SHEET_URL='';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const F=['name','age','city','parent','phone','social','note'];
+let db=null,uid=null,list=[];
+const f=$('f'),err=$('err'),send=$('send');
+
+try{const d=JSON.parse(localStorage.getItem('uk-draft')||'{}');for(const k of F)if(d[k])$(k).value=d[k]}catch(e){}
+f.addEventListener('input',()=>{try{const d={};for(const k of F)d[k]=$(k).value;localStorage.setItem('uk-draft',JSON.stringify(d))}catch(e){}});
+
+function check(){
+  let bad=null;
+  for(const id of ['name','age','parent','phone']){const el=$(id),v=el.value.trim();let ok=!!v;
+    if(id==='phone')ok=v.replace(/\D/g,'').length>=9;
+    if(id==='age')ok=+v>=5&&+v<=16;
+    el.setAttribute('aria-invalid',ok?'false':'true');if(!ok&&!bad)bad=el}
+  if(bad){err.textContent=bad.id==='phone'?'Перевірте номер телефону.':bad.id==='age'?'Майстер-клас для дітей 7–12 років. Перевірте вік.':'Заповніть поля, позначені зірочкою.';bad.focus();return false}
+  if(!$('ok').checked){err.textContent='Потрібна згода одного з батьків.';$('ok').focus();return false}
+  err.textContent='';return true}
+
+f.addEventListener('submit',async e=>{
+  e.preventDefault();if(!check())return;
+  const rec={t:Date.now(),name:$('name').value.trim(),age:+$('age').value,city:$('city').value.trim(),parent:$('parent').value.trim(),
+    phone:$('phone').value.trim(),social:$('social').value.trim(),exp:(f.querySelector('input[name=exp]:checked')||{}).value||'',
+    topics:[...f.querySelectorAll('input[name=topic]:checked')].map(i=>i.value),note:$('note').value.trim()};
+  send.disabled=true;send.textContent='Надсилаємо…';
+  try{
+    if(db&&uid){const ref=db.collection('signups').doc(uid);let prev=[];
+      try{const g=await ref.get();const v=g&&(typeof g.data==='function'?g.data():g);if(v&&Array.isArray(v.items))prev=v.items}catch(x){}
+      await ref.set({t:rec.t,items:[...prev,rec].slice(-10)})}
+    else if(location.protocol.startsWith('http')&&!/claude|anthropic/.test(location.hostname)){
+      const mail={_subject:'Нова анкета: '+rec.name+', '+rec.age+' р.',_template:'table',_captcha:'false',
+        'Дитина':rec.name,'Вік':rec.age,'Місто':rec.city,'Батьки':rec.parent,'Телефон':rec.phone,'Соцмережі':rec.social,
+        'Перед камерою':rec.exp,'Захоплення':rec.topics.join(', '),'Коментар':rec.note,'Дата заявки':new Date(rec.t).toLocaleString('uk-UA')};
+      const r=await fetch('https://formsubmit.co/ajax/'+EMAIL,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(mail)});
+      if(!r.ok)throw new Error('send');
+      if(SHEET_URL){const b=new URLSearchParams();for(const[k,v]of Object.entries(rec))b.append(k,Array.isArray(v)?v.join(', '):v);
+        fetch(SHEET_URL,{method:'POST',mode:'no-cors',body:b}).catch(()=>{})}}
+    else throw new Error('none');
+    try{localStorage.removeItem('uk-draft')}catch(x){}
+    f.style.display='none';$('done').classList.add('on');$('done').scrollIntoView({block:'center'});
+  }catch(x){err.textContent=x.message==='none'?'Надсилання зараз недоступне. Напишіть нам: '+EMAIL:'Не вдалося надіслати. Спробуйте ще раз.'}
+  finally{send.disabled=false;send.textContent='Записатися'}
+});
+$('again').addEventListener('click',()=>{f.reset();f.style.display='';$('done').classList.remove('on');$('name').focus()});
+
+function render(){
+  $('cnt').textContent='Заявки: '+list.length;
+  $('rows').innerHTML=list.length?list.map(r=>`<tr><td class="n">${esc(new Date(r.t).toLocaleDateString('uk-UA'))}</td><td>${esc(r.name)}</td><td class="n">${esc(r.age)}</td><td>${esc(r.parent)}</td><td class="n">${esc(r.phone)}</td><td>${esc(r.social)}</td><td>${esc(r.exp)}</td><td>${esc((r.topics||[]).join(', '))}</td><td>${esc(r.note)}</td></tr>`).join(''):'<tr><td colspan="9">Поки що заявок немає.</td></tr>';
+}
+$('copy').addEventListener('click',async()=>{
+  const head=['Дата','Дитина','Вік','Місто','Батьки','Телефон','Соцмережі','Перед камерою','Теми','Коментар'];
+  const t=[head,...list.map(r=>[new Date(r.t).toLocaleString('uk-UA'),r.name,r.age,r.city,r.parent,r.phone,r.social,r.exp,(r.topics||[]).join(', '),r.note])]
+    .map(a=>a.map(v=>String(v??'').replace(/[\t\n]/g,' ')).join('\t')).join('\n');
+  try{await navigator.clipboard.writeText(t);$('copy').textContent='Скопійовано'}catch(x){$('copy').textContent='Не вдалося'}
+  setTimeout(()=>$('copy').textContent='Копіювати як таблицю',2000);
+});
+
+(async()=>{
+  try{
+    if(!window.claude)return;
+    const [d,u]=await Promise.all([claude.use('db'),claude.use('user')]);
+    db=d;if(u)uid=await u.id();
+    if(!db)return;
+    db.collection('signups').orderBy('t','desc').onSnapshot(s=>{
+      list=(s.docs||[]).map(x=>typeof x.data==='function'?x.data():x).flatMap(v=>Array.isArray(v&&v.items)?v.items:[v]).sort((a,b)=>b.t-a.t);
+      $('admin').classList.add('on');render();
+    },()=>{});
+  }catch(x){}
+})();
+}
+</script>
+</body>
+</html>

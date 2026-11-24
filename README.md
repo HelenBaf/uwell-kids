@@ -1,1 +1,3 @@
-# uwell-kids
+# UWELL KIDS — Зніми себе як профі!
+
+Сторінка запису на майстер-клас. Анкети приходять на uwellkids.team@gmail.com.
