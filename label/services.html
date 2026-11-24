@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Послуги та студія — UWELL</title>
+<meta name="description" content="UWELL — музичний лейбл і продакшн. Артисти, релізи, студія, майстер-класи для дітей.">
+<link rel="icon" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="../logo.png" alt="" width="40" height="40"><span>UWELL</span></a>
+  <nav class="nav" aria-label="Меню"><a href="index.html">Головна</a><a href="artists.html">Артисти</a><a href="releases.html">Релізи</a><a href="services.html" aria-current=page>Послуги</a><a href="masterclasses.html">Майстер-класи</a></nav>
+</div></header>
+<main>
+<section class="phead band"><div class="wrap">
+  <h1>Послуги та студія</h1>
+  <p>Від першого рядка тексту до кліпу в стрічці. Вартість залежить від задачі — напишіть нам, і ми порахуємо.</p>
+</div></section>
+<section class="band sec"><div class="wrap"><div class="grid g3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></svg></div><h3>Запис треку</h3><p>Студійний запис вокалу, зведення і мастеринг. Допоможемо з текстом і подачею.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div><h3>Відеокліп</h3><p>Ідея, сценарій, зйомка й монтаж кліпу під ваш трек.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Контент для соцмереж</h3><p>Рілси, сторіс, тизери релізу — щоб трек побачили.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><h3>Продюсування артиста</h3><p>Образ, план релізів, просування. Ведемо артиста від першого треку.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8zM4 8l2-4h14l-2 4M9 4 7 8M14 4l-2 4"/></svg></div><h3>Відеовізитівка</h3><p>Професійна відеовізитівка для дитини або артиста: для кастингів і соцмереж.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg></div><h3>Майстер-класи</h3><p>Виїзні й студійні майстер-класи для дітей і шкіл.</p></div></div></div></section>
+<section class="band alt" id="contact"><div class="formcard">
+  <form id="f" novalidate>
+    <h2>Обговорити проєкт</h2>
+    <p class="sub">Залиште контакти — відповімо протягом дня.</p>
+    <div class="fgrid">
+      <label class="f">Ім'я *<input id="name" autocomplete="name"></label>
+      <label class="f">Телефон *<input id="phone" type="tel" autocomplete="tel" placeholder="+380"></label>
+      <label class="f full">Що цікавить
+        <select id="svc"><option>Запис треку</option><option>Відеокліп</option><option>Контент для соцмереж</option><option>Продюсування артиста</option><option>Відеовізитівка</option><option>Майстер-клас</option><option>Хочу стати артистом</option><option>Інше</option></select></label>
+      <label class="f full">Instagram або Telegram<input id="social" placeholder="@нікнейм"></label>
+      <label class="f full">Коротко про задачу<textarea id="msg" placeholder="Наприклад: є готовий трек, хочемо кліп до кінця грудня"></textarea></label>
+    </div>
+    <p class="err" id="err" role="alert"></p>
+    <button class="cta" id="send" type="submit">Надіслати</button>
+  </form>
+  <div class="done" id="done" role="status"><h2>Дякуємо!</h2><p class="sub" style="margin:12px auto 0">Заявку отримали, скоро зв'яжемося.</p></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div>UWELL ❤️ Тут починається твоя історія.</div>
+  <div class="soc">
+    <a href="https://www.instagram.com/uwell.production/">@uwell.production</a>
+    <a href="https://www.instagram.com/uwell.kids/">@uwell.kids</a>
+    <span>uwellkids.team@gmail.com</span>
+  </div>
+</div></footer>
+<script>
+{
+const $=id=>document.getElementById(id);
+$('f').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const name=$('name').value.trim(),phone=$('phone').value.trim();
+  if(!name||phone.replace(/\D/g,'').length<9){$('err').textContent='Вкажіть ім\u2019я і телефон.';return}
+  $('err').textContent='';const b=$('send');b.disabled=true;b.textContent='Надсилаємо…';
+  try{
+    const r=await fetch('https://formsubmit.co/ajax/uwellkids.team@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({_subject:'UWELL: заявка — '+$('svc').value,_template:'table',_captcha:'false','Ім\u2019я':name,'Телефон':phone,'Послуга':$('svc').value,'Соцмережі':$('social').value.trim(),'Задача':$('msg').value.trim()})});
+    if(!r.ok)throw 0;
+    $('f').style.display='none';$('done').classList.add('on');
+  }catch(x){$('err').textContent='Не вдалося надіслати. Напишіть нам: uwellkids.team@gmail.com'}
+  finally{b.disabled=false;b.textContent='Надіслати'}
+});
+}
+</script>
+</body>
+</html>
